@@ -56,9 +56,8 @@ sudo usermod -aG docker ec2-user
 exit
 ```
 Steps to Deploy Docker Image from Private Docker Repository on EC2 Instance
-Step 1: Clone the 'react-nodejs-example' application from [GitHub](https://github.com/techworld-with-nana/react-nodejs-example). Build a Docker image and push the image to your private Docker registry. Because my local machine has an Apple M2 processor (arm64) and the EC2 virtual machine we just created has an amd64 processor, the usual 'docker build' command would create an image runnable on arm64 only. So I would either have to slightly modify the Dockerfile and replace 'FROM node:10' with 'FROM --platform=linux/amd64 node:10' or I can use docker buildx to build images for specific platforms:
 
-So I have added --platform linux/arm64 to the Dockerfile to specify the runtime platform, created the image with docker build and pushed the image to Dockerhub.
+Step 1: Clone the 'react-nodejs-example' application from [GitHub](https://github.com/techworld-with-nana/react-nodejs-example). 
 
 `docker build -t deepthisasi/demo-app:react-nodejs-1.1 .`
 
