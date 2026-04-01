@@ -57,7 +57,7 @@ exit
 ```
 Steps to Deploy Docker Image from Private Docker Repository on EC2 Instance
 
-Step 1: Clone the 'react-nodejs-example' application from [GitHub](https://github.com/techworld-with-nana/react-nodejs-example). 
+Step 1: Clone the 'react-nodejs-example' application from [GitHub](https://github.com/techworld-with-nana/react-nodejs-example) and build the image with the Dockerfile using the below command.
 
 `docker build -t deepthisasi/demo-app:react-nodejs-1.1 .`
 
