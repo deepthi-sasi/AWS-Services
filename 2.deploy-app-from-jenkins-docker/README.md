@@ -6,8 +6,8 @@
 
 ### Technologies Used
 
-* AWS
-*Jenkins 
+* AWS 
+* Jenkins 
 * Docker 
 * Linux 
 * Git 
@@ -55,7 +55,7 @@ Click Save rules
 
 #### Steps to extend the CI pipeline with deploy step to deploy newly built image from Jenkins server
 
-Step 1: Open the Jenkinsfile in the application project, which is built in the qws-multibranch pipeline ([aws-java-maven-app](https://github.com/deepthi-sasi/aws-java-maven-app)) and add the following stage:
+Step 1: Open the Jenkinsfile in the application project, which is built in the aws-multibranch pipeline ([aws-java-maven-app](https://github.com/deepthi-sasi/aws-java-maven-app)) and add the following stage:
 
         stage('Deploy Application') {
             steps {
