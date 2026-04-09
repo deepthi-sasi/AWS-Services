@@ -15,11 +15,11 @@ Complete the CI/CD Pipeline (Docker-Compose, Dynamic versioning)
 * Docker Hub
 
 ### Project Description
-CI step: Increment version
-CI step: Build artifact for Java Maven application
-CI step: Build and push Docker image to Docker Hub
-CD step: Deploy new application version with Docker Compose
-CD step: Commit the version update
+* CI step: Increment version 
+* CI step: Build artifact for Java Maven application 
+* CI step: Build and push Docker image to Docker Hub 
+* CD step: Deploy new application version with Docker Compose 
+* CD step: Commit the version update
 
 Steps to implement the complete CI/CD Pipeline
 Step 1: Compared to the pipeline of the previous demo project 3 only the first stage (incrementing the version) and the last stage (committing the version update) are missing. So we copy these two stages from the final pipeline in module 08 (Build Automation & CI/CD with Jenkins). This results in the following Jenkinsfile for the complete pipeline:
