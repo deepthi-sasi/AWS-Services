@@ -22,8 +22,9 @@ Complete the CI/CD Pipeline (Docker-Compose, Dynamic versioning)
 * CD step: Commit the version update
 
 Steps to implement the complete CI/CD Pipeline
-Step 1: Compared to the pipeline of the previous demo project 3 only the first stage (incrementing the version) and the last stage (committing the version update) are missing. So we copy these two stages from the final pipeline in module 08 (Build Automation & CI/CD with Jenkins). This results in the following Jenkinsfile for the complete pipeline:
 
+Step 1: Compared to the pipeline of the previous demo project 3 only the first stage (incrementing the version) and the last stage (committing the version update) are missing. So we copy these two stages from the final pipeline in module 08 (Build Automation & CI/CD with Jenkins). This results in the following Jenkinsfile for the complete pipeline:
+We've extracted all the logic into Jenkins Shared Library functions([refer](https://github.com/deepthi-sasi/jenkins-shared-library)).
 ```
 #!/usr/bin/env groovy
 
